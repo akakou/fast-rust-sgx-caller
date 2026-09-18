@@ -2,5 +2,19 @@
 name = "fast-rust-sgx-caller"
 version = "0.1.0"
 edition = "2024"
+rust-version = "1.88"
+description = "Synchronous Fortanix SGX library calls without a per-call runtime"
 
 [dependencies]
+fortanix-sgx-abi = "0.6"
+libc = "0.2"
+sgxs = "0.9"
+
+[dev-dependencies]
+anyhow = "1"
+enclave-runner = "0.8"
+enclave-runner-sgx = "0.1.4"
+openssl = "0.10"
+sgx-isa = "0.6"
+sgxs = { version = "0.9", features = ["crypto-openssl"] }
+sgxs-loaders = "0.5.2"
