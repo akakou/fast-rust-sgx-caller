@@ -142,7 +142,6 @@ cargo test --locked --release --test sgx -- \
   --ignored --nocapture --test-threads=1
 ```
 
-For performance measurements, see [docs/performance.md](https://chatgpt.com/c/docs/performance.md).
 
 ## References
 
